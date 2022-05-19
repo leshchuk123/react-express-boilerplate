@@ -10,7 +10,7 @@ const Header = () => {
       <div className={styles.title}>
         The Hitchhiker's Guide to the Galaxy
       </div>
-      <Navigation />
+      <Navigation className='header' />
     </Container>
   </header>
 }

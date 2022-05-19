@@ -1,13 +1,10 @@
-import React, { FC, CSSProperties, PropsWithChildren } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
+
+import { IStylable } from "../../interfaces";
 
 import "./container.scss";
 
-export interface IContainer {
-  className?: string
-  style?: CSSProperties
-}
-
-const Container: FC<PropsWithChildren<IContainer>> = (props): JSX.Element => {
+const Container: FC<PropsWithChildren<IStylable>> = (props) => {
   const { 
     className = "",
     style = {},

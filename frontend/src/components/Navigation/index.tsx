@@ -1,11 +1,17 @@
-import * as React from 'react';
-import { Link } from 'react-router-dom';
+import React, { FC } from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Navigation = () => {
-  return <nav>
-    <Link to="/">Home</Link>
-    <Link to="/articles">Articles</Link>
-  </nav>
+import { IStylable } from "../../interfaces";
+
+import "./navigation.scss";
+
+const Navigation: FC<IStylable> = (props) => {
+  const { className = "", style = {} } = props;
+
+  return (<nav {...{ className, style }}>
+    <NavLink to="/">Home</NavLink>
+    <NavLink to="/articles">Articles</NavLink>
+  </nav>);
 }
 
 export default Navigation;

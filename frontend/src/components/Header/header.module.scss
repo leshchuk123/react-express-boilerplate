@@ -8,21 +8,6 @@
   background-color: black;
   color: whitesmoke;
   @include no-select;
-
-  nav {
-    display: flex;
-    gap: 10px;
-
-    a {
-      color: inherit;
-      text-decoration: none;
-      padding: 10px;
-
-      &:hover {
-        background-color: #555555;
-      }
-    }
-  }
 }
 
 .container {
