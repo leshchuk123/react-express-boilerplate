@@ -1,0 +1,33 @@
+@mixin flex-centred {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-spaced {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin no-select {
+  user-select: none;
+}
+
+@mixin alarm {
+  background-color: red;
+  color: white;
+  font-weight: 700;
+}
+
+@mixin success {
+  background-color: green;
+  color: white;
+  font-weight: 700;
+}
+
+@mixin info {
+  background-color: blue;
+  color: white;
+  font-weight: 700;
+}

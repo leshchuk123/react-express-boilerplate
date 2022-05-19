@@ -1,0 +1,38 @@
+@import "../../../styles/mixins.scss";
+
+.alarmBlock {
+  @include flex-centred;
+  height: calc(100vh - 52px);
+}
+
+.messageBlock {
+  @include no-select;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50vw;
+}
+
+.alarmMessage {
+  @include flex-centred;
+  @include alarm;
+  min-height: 30vh;
+  font-size: 5rem;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.answerMessage {
+  @include flex-centred;
+  @include success;
+  min-height: 30vh;
+  font-size: 2rem;
+  padding: 20px 50px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.answer {
+  font-size: 5rem;
+  margin-left: 20px;
+}

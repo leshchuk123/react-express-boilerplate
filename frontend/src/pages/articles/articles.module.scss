@@ -1,0 +1,13 @@
+@import "../../../styles/mixins.scss";
+
+.row {
+  @include flex-spaced;
+}
+
+.article_title {
+  font-weight: 700;
+}
+
+.article_desc {
+  color: grey;
+}
