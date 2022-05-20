@@ -1,13 +1,10 @@
-import * as React from "react";
-import {
-  Routes,
-  Route,
-} from "react-router-dom";
+import * as React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-import Home from "./pages/home";
-import Articles from "./pages/articles";
+import Home from './pages/home';
+import Articles from './pages/articles';
 
-import PageLayout from "./pages/layout";
+import PageLayout from './pages/layout';
 
 const App = () => {
   return (
@@ -19,6 +16,6 @@ const App = () => {
       </Route>
     </Routes>
   );
-}
+};
 
 export default App;

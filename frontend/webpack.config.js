@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   entry: "./index.tsx",
@@ -64,7 +65,8 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new ESLintPlugin()
   ],
   devServer: {
     historyApiFallback: true,
