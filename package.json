@@ -10,7 +10,7 @@
     "start": "concurrently \"npm run server\" \"npm run client\" "
   },
   "keywords": [],
-  "author": "",
+  "author": "Andrey Leshchuk",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^7.2.0"
