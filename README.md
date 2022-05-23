@@ -9,7 +9,7 @@ Also `prettier`, `eslint` and `husky` added.
 ## Scripts
 
 In root directory:
-- `npm app-install` - installs both backend and frontend dependencies;
+- `npm run app-install` - installs both backend and frontend dependencies;
 - `npm start` - starts both backend (port 3001) and frontend (port 3000) applications;
 
 Similarly, `npm start` scripts can run applications in their own directories independently of each other.
